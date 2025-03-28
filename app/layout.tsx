@@ -15,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="antialiased">
+      <body className="antialiased flex flex-col min-h-screen">
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow pt-16 md:pt-20"> {/* Added padding to account for fixed header */}
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

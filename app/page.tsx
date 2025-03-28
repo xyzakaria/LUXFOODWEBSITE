@@ -1,26 +1,22 @@
+import Hero from "@/components/Hero";
+import TrendingProducts from "@/components/TrendingProducts";
+import FeaturedCategories from "@/components/FeaturedCategories";
+import ProductGrid from "@/components/ProductGrid";
+import Testimonials from "@/components/Testimonials";
+import Newsletter from "@/components/Newsletter";
 
-import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-export const metadata: Metadata = {
-  title: "LuxFood – Boutique de saveurs",
-  description: "Boutique en ligne spécialisée dans les produits du Moyen‑Orient.",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Home() {
   return (
-    <html lang="fr">
-      <body className="antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <div className="space-y-16 md:space-y-24 pb-16">
+      <Hero />
+      <TrendingProducts />
+      <FeaturedCategories />
+      <ProductGrid 
+        title="Nos Produits Phares"
+        subtitle="Découvrez nos meilleures ventes"
+      />
+      <Testimonials />
+      <Newsletter />
+    </div>
   );
 }

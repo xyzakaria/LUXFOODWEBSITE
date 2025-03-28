@@ -1,12 +1,23 @@
+'use client'
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card"; // Vous pouvez adapter ou créer vos propres composants Card
 
-// Exemple de données produits
-const products = [
-  { id: 1, name: "Produit 1", image: "/produit1.jpg" },
-  { id: 2, name: "Produit 2", image: "/produit2.jpg" },
-  { id: 3, name: "Produit 3", image: "/produit3.jpg" },
-  { id: 4, name: "Produit 4", image: "/produit4.jpg" },
+type Product = {
+  id: number;
+  name: string;
+  image: string;
+  price?: number;
+  description?: string;
+};
+
+const products: Product[] = [
+  { 
+    id: 1, 
+    name: "Huile d'Olive Premium", 
+    image: "/produit1.jpg",
+    price: 24.99,
+    description: "Huile d'olive extra vierge de première pression à froid"
+  },
+  // Add other products with similar structure
 ];
 
 export default function ProductGrid() {
@@ -18,7 +29,6 @@ export default function ProductGrid() {
 
   return (
     <section className="p-4">
-      {/* Barre de recherche */}
       <div className="max-w-4xl mx-auto mb-6">
         <div className="flex items-center border rounded-lg p-2 bg-white shadow-sm">
           <input
@@ -31,12 +41,11 @@ export default function ProductGrid() {
         </div>
       </div>
 
-      {/* Grille de produits */}
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="bg-white shadow rounded-lg overflow-hidden"
+            className="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
           >
             <img
               src={product.image}
@@ -44,7 +53,12 @@ export default function ProductGrid() {
               className="w-full h-40 object-cover"
             />
             <div className="p-4">
-              <p className="font-semibold text-gray-800">{product.name}</p>
+              <h3 className="font-semibold text-gray-800">{product.name}</h3>
+              {product.price && (
+                <p className="text-blue-600 font-medium mt-2">
+                  {product.price.toFixed(2)}€
+                </p>
+              )}
             </div>
           </div>
         ))}

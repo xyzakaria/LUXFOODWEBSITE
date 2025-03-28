@@ -3,24 +3,28 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="w-full h-64 bg-cover bg-center flex items-center justify-center text-white text-center"
-      style={{ backgroundImage: "url('/hero-banner.jpg')" }}
+      className="relative w-full h-screen max-h-[800px] bg-cover bg-center flex items-center"
+      style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), url('/hero-banner.jpg')" }}
     >
-      <div>
-        <h1 className="text-3xl md:text-5xl font-bold">
-          Le spécialiste des saveurs du Moyen‑Orient
+      <div className="container mx-auto px-4 text-center text-white">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeIn">
+          Saveurs Authentiques du Moyen-Orient
         </h1>
-        <p className="mt-4 text-lg md:text-2xl">Découvrez nos produits uniques</p>
-        <div className="mt-6 flex justify-center space-x-4">
-          <Link href="/produits">
-            <a className="px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">
-              Voir nos produits
-            </a>
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fadeIn delay-100">
+          Découvrez des produits d'exception sélectionnés avec soin
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fadeIn delay-200">
+          <Link
+            href="/produits"
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-colors"
+          >
+            Explorer nos produits
           </Link>
-          <Link href="/a-propos">
-            <a className="px-6 py-2 bg-white text-blue-600 rounded-full hover:bg-gray-200 transition">
-              Lire notre histoire
-            </a>
+          <Link
+            href="/a-propos"
+            className="px-8 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-full font-medium transition-colors"
+          >
+            Notre histoire
           </Link>
         </div>
       </div>
