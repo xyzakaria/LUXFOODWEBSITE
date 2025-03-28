@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import { useState } from "react";
 import { Search, ShoppingCart } from "lucide-react";
@@ -8,18 +9,18 @@ export default function Header() {
   return (
     <header className="bg-white shadow p-4 flex justify-between items-center">
       {/* Logo */}
-      <Link href="/">
+      <Link legacyBehavior href="/">
         <a className="flex items-center">
           <img src="/logo.png" alt="Logo" className="h-8 mr-2" />
           <span className="text-xl font-bold text-gray-800">LuxFood</span>
         </a>
-      </Link>
+      </Link >
 
       {/* Navigation principale */}
       <nav className="hidden md:flex space-x-6">
-        <Link href="/produits"><a className="text-gray-700 hover:text-gray-900">Produits</a></Link>
-        <Link href="/a-propos"><a className="text-gray-700 hover:text-gray-900">À propos</a></Link>
-        <Link href="/contact"><a className="text-gray-700 hover:text-gray-900">Contact</a></Link>
+        <Link legacyBehavior href="/produits"><a className="text-gray-700 hover:text-gray-900">Produits</a></Link>
+        <Link legacyBehavior href="/a-propos"><a className="text-gray-700 hover:text-gray-900">À propos</a></Link>
+        <Link legacyBehavior href="/contact"><a className="text-gray-700 hover:text-gray-900">Contact</a></Link>
       </nav>
 
       {/* Icônes et barre de recherche */}
@@ -52,9 +53,9 @@ export default function Header() {
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow md:hidden p-4">
           <nav className="flex flex-col space-y-2">
-            <Link href="/produits"><a className="text-gray-700 hover:text-gray-900">Produits</a></Link>
-            <Link href="/a-propos"><a className="text-gray-700 hover:text-gray-900">À propos</a></Link>
-            <Link href="/contact"><a className="text-gray-700 hover:text-gray-900">Contact</a></Link>
+            <Link legacyBehavior href="/produits"><a className="text-gray-700 hover:text-gray-900">Produits</a></Link>
+            <Link legacyBehavior href="/a-propos"><a className="text-gray-700 hover:text-gray-900">À propos</a></Link>
+            <Link legacyBehavior href="/contact"><a className="text-gray-700 hover:text-gray-900">Contact</a></Link>
             <div className="mt-2 relative">
               <input
                 type="text"

@@ -7,23 +7,23 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-2">Service Client</h4>
           <ul>
-            <li><Link href="/contact"><a className="hover:underline">Contact</a></Link></li>
-            <li><Link href="/a-propos"><a className="hover:underline">À propos</a></Link></li>
-            <li><Link href="/faq"><a className="hover:underline">FAQ</a></Link></li>
+            <li><Link legacyBehavior href="/contact"><a className="hover:underline">Contact</a></Link></li>
+            <li><Link legacyBehavior href="/a-propos"><a className="hover:underline">À propos</a></Link></li>
+            <li><Link legacyBehavior href="/faq"><a className="hover:underline">FAQ</a></Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-bold mb-2">Mon Compte</h4>
           <ul>
-            <li><Link href="/login"><a className="hover:underline">Se connecter</a></Link></li>
-            <li><Link href="/register"><a className="hover:underline">S'inscrire</a></Link></li>
+            <li><Link legacyBehavior href="/login"><a className="hover:underline">Se connecter</a></Link></li>
+            <li><Link legacyBehavior href="/register"><a className="hover:underline">S'inscrire</a></Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-bold mb-2">À Propos</h4>
           <ul>
-            <li><Link href="/a-propos"><a className="hover:underline">Notre Histoire</a></Link></li>
-            <li><Link href="/catalogue"><a className="hover:underline" target="_blank">Catalogue</a></Link></li>
+            <li><Link legacyBehavior href="/a-propos"><a className="hover:underline">Notre Histoire</a></Link></li>
+            <li><Link legacyBehavior href="/catalogue"><a className="hover:underline" target="_blank">Catalogue</a></Link></li>
           </ul>
         </div>
         <div>
