@@ -1,10 +1,11 @@
+import React from "react";
 import Hero from "@/components/Hero";
 import TrendingProducts from "@/components/TrendingProducts";
 import FeaturedCategories from "@/components/FeaturedCategories";
 import ProductGrid from "@/components/ProductGrid";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
-import React from "react";
+
 
 export default function Home() {
   return (
