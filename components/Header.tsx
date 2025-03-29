@@ -1,7 +1,15 @@
 'use client'
+<<<<<<< HEAD
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Search, ShoppingCart, User, Menu, X } from "lucide-react";
+=======
+import { useState } from 'react'
+import Link from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
+import { Search, ShoppingCart, User, Menu, X } from 'lucide-react'
+import LanguageSwitcher from './LanguageSwitcher'
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +26,7 @@ export default function Header() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <header 
       className="fixed w-full z-50 bg-white shadow-md"
       style={{ height: headerHeight.mobile }}
@@ -26,10 +35,15 @@ export default function Header() {
         <div className="flex justify-between items-center h-full">
           {/* Logo */}
 =======
+=======
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
     <header className="fixed w-full z-50 bg-white shadow-md py-2">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo - Visible sur tous les appareils */}
+<<<<<<< HEAD
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
+=======
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
           <Link href={`/${locale}`} className="flex items-center space-x-2">
 =======
@@ -45,10 +59,14 @@ export default function Header() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           {/* Navigation Desktop */}
 =======
           {/* Desktop Navigation */}
 >>>>>>> parent of 21cc5a5 (support product et layout de langues)
+=======
+          {/* Navigation Desktop - Caché sur mobile */}
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
 =======
           {/* Navigation Desktop - Caché sur mobile */}
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
@@ -69,6 +87,7 @@ export default function Header() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           {/* Right Section */}
 =======
           {/* Section droite (icônes + menu mobile) */}
@@ -86,6 +105,14 @@ export default function Header() {
 
             {/* Barre de recherche - Desktop seulement */}
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
+=======
+          {/* Section droite (icônes + menu mobile) */}
+          <div className="flex items-center space-x-4">
+            {/* Sélecteur de langue */}
+            <LanguageSwitcher />
+
+            {/* Barre de recherche - Desktop seulement */}
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
             <div className="relative hidden md:block">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <input
@@ -97,6 +124,10 @@ export default function Header() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            {/* Icône compte */}
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
 =======
             {/* Icône compte */}
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
@@ -112,6 +143,7 @@ export default function Header() {
               </span>
             </Link>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             <div className="flex space-x-3">
@@ -131,6 +163,9 @@ export default function Header() {
 =======
             {/* Bouton menu mobile - Visible seulement sur mobile */}
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
+=======
+            {/* Bouton menu mobile - Visible seulement sur mobile */}
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
             <button 
               className="md:hidden p-2 text-gray-700 focus:outline-none"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -143,7 +178,11 @@ export default function Header() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         {/* Mobile Menu */}
+=======
+        {/* Menu Mobile - S'affiche quand menuOpen = true */}
+>>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
 =======
         {/* Menu Mobile - S'affiche quand menuOpen = true */}
 >>>>>>> parent of 669c5d3 (problesmes on regle ca plus tard)
