@@ -1,0 +1,56 @@
+{
+    "header": {
+      "home": "Home",
+      "products": "Products",
+      "categories": "Categories",
+      "about": "About",
+      "contact": "Contact",
+      "search": "Search...",
+      "cart": "Cart",
+      "account": "My Account"
+    },
+    "hero": {
+      "title": "Authentic Middle Eastern Flavors",
+      "subtitle": "Discover exceptional products carefully selected",
+      "cta1": "Explore our products",
+      "cta2": "Our story"
+    },
+    "categories": {
+      "title": "Our Categories",
+      "subtitle": "Explore our carefully curated selections"
+    },
+    "products": {
+      "title": "Featured Products",
+      "subtitle": "Discover our best sellers",
+      "price": "Price",
+      "view": "View product",
+      "trending": "Trending Products"
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "subtitle": "Discover experiences from our satisfied customers"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Subscribe to our newsletter for special offers",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    },
+    "footer": {
+      "customer": "Customer Service",
+      "contact": "Contact",
+      "about": "About Us",
+      "faq": "FAQ",
+      "account": "My Account",
+      "login": "Login",
+      "register": "Register",
+      "history": "Our History",
+      "catalog": "Catalog",
+      "address": "LuxFood LLC",
+      "street": "123 Example Street",
+      "city": "75000 Paris, France",
+      "phone": "Phone: +33 1 23 45 67 89",
+      "email": "Email: contact@luxfood.com",
+      "copyright": "© 2025 LuxFood - All Rights Reserved"
+    }
+  }

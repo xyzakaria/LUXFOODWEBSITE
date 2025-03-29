@@ -1,0 +1,56 @@
+{
+  "header": {
+    "home": "Accueil",
+    "products": "Produits",
+    "categories": "Catégories",
+    "about": "À propos",
+    "contact": "Contact",
+    "search": "Rechercher...",
+    "cart": "Panier",
+    "account": "Mon compte"
+  },
+  "hero": {
+    "title": "Saveurs Authentiques du Moyen-Orient",
+    "subtitle": "Découvrez des produits d'exception sélectionnés avec soin",
+    "cta1": "Explorer nos produits",
+    "cta2": "Notre histoire"
+  },
+  "categories": {
+    "title": "Nos Catégories",
+    "subtitle": "Explorez nos sélections soigneusement choisies"
+  },
+  "products": {
+    "title": "Nos Produits Phares",
+    "subtitle": "Découvrez nos meilleures ventes",
+    "price": "Prix",
+    "view": "Voir le produit",
+    "trending": "Produits Tendances"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Découvrez les expériences de nos clients satisfaits"
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "subtitle": "Abonnez-vous à notre newsletter pour recevoir nos offres spéciales",
+    "placeholder": "Votre email",
+    "button": "S'abonner"
+  },
+  "footer": {
+    "customer": "Service Client",
+    "contact": "Contact",
+    "about": "À propos",
+    "faq": "FAQ",
+    "account": "Mon Compte",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "history": "Notre Histoire",
+    "catalog": "Catalogue",
+    "address": "LuxFood SARL",
+    "street": "123 Rue de l'Exemple",
+    "city": "75000 Paris, France",
+    "phone": "Tél : +33 1 23 45 67 89",
+    "email": "Email : contact@luxfood.fr",
+    "copyright": "© 2025 LuxFood - Tous droits réservés"
+  }
+}
