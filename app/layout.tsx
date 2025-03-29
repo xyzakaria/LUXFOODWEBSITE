@@ -15,17 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-<<<<<<< HEAD
-      <body className="antialiased">
-        {children}
-=======
       <body className="antialiased flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow pt-16 md:pt-20"> {/* Added padding to account for fixed header */}
           {children}
         </main>
         <Footer />
->>>>>>> parent of 21cc5a5 (support product et layout de langues)
       </body>
     </html>
   );
