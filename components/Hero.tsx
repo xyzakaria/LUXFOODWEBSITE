@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       className="relative w-full h-screen max-h-[800px] bg-cover bg-center flex items-center"
-      style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), url('/hero-banner.jpg')" }}
+      style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero-banner.jpg')" }}
     >
       <div className="container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeIn">

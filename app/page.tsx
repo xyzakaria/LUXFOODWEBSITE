@@ -4,6 +4,7 @@ import FeaturedCategories from "@/components/FeaturedCategories";
 import ProductGrid from "@/components/ProductGrid";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
+import React from "react";
 
 export default function Home() {
   return (
