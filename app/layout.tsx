@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr"> {/* Langue par défaut */}
+    <html lang="fr">
       <body className="antialiased">
         {children}
       </body>
