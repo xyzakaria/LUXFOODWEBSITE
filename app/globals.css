@@ -5,29 +5,6 @@
   --foreground: #171717;
 }
 
-/* Ajustements globaux */
-html {
-  @apply scroll-smooth;
-}
-
-body {
-  @apply antialiased bg-white text-gray-900;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  @apply flex-grow;
-  padding-top: 4rem; /* Compense la navbar fixe */
-}
-
-/* Pour les écrans mobiles */
-@media (max-width: 768px) {
-  main {
-    padding-top: 3.5rem;
-  }
-}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -62,40 +39,4 @@ body {
 
 .delay-200 {
   animation-delay: 0.2s;
-}
-/* Correction pour la navbar fixe */
-body {
-  padding-top: 80px; /* Hauteur de votre header */
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-top: 72px; /* Ajustement pour desktop */
-  }
-}
-
-/* Conteneur principal */
-.main-container {
-  max-width: 1536px;
-  margin: 0 auto;
-}
-/* Ajustements pour la navbar fixe */
-body {
-  padding-top: 5rem; /* mobile first */
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-top: 4.5rem;
-  }
-}
-
-/* Styles RTL pour l'arabe */
-[dir="rtl"] .rtl-mirror {
-  transform: scaleX(-1);
-}
-
-/* Transition pour le menu mobile */
-.mobile-menu {
-  transition: all 0.3s ease;
 }

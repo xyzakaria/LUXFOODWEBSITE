@@ -1,22 +1,27 @@
+import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { ReactNode } from 'react'
-import { notFound } from 'next/navigation'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import { unstable_setRequestLocale } from 'next-intl/server'
 
 type Props = {
   children: ReactNode
   params: { locale: string }
 }
 
+// Liste des langues supportées
 const locales = ['fr', 'en', 'ar', 'tr']
 
 export default async function LocaleLayout({
   children,
   params: { locale }
 }: Props) {
-  if (!locales.includes(locale)) notFound()
+  // Validation de la locale
+  if (!locales.includes(locale as any)) notFound()
 
+  // Configuration pour le rendu côté serveur
+  unstable_setRequestLocale(locale)
+
+  // Chargement des traductions
   let messages
   try {
     messages = (await import(`../../locales/${locale}/common.json`)).default
@@ -25,22 +30,15 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <body className="min-h-screen flex flex-col bg-gray-50">
-        <Header />
-        <main className="flex-grow pt-20 pb-8">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <NextIntlClientProvider locale={locale} messages={messages}>
-              {children}
-            </NextIntlClientProvider>
-          </div>
-        </main>
-        <Footer />
-      </body>
-    </html>
+    <NextIntlClientProvider 
+      locale={locale} 
+      messages={messages}
+      timeZone="Europe/Paris"
+    >
+      {/* Structure de base avec header/footer */}
+      <div className="min-h-screen flex flex-col">
+        {children}
+      </div>
+    </NextIntlClientProvider>
   )
-}
-
-export const generateStaticParams = () => {
-  return locales.map((locale) => ({ locale }))
 }
